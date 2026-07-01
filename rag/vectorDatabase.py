@@ -5,10 +5,8 @@ conn = duckdb.connect("research.db")
 import json
 
 
-conn.execute("""
-             INSTALL vss;
-             LOAD vss;
-             """)
+conn.execute("INSTALL vss;")
+conn.execute("LOAD vss;")
 
 conn.execute(
     """
@@ -17,6 +15,7 @@ conn.execute(
     context TEXT,
     embedding FLOAT[384],
     metadata JSON
+    )
     """
 )
 

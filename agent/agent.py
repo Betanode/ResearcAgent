@@ -11,6 +11,7 @@ from langchain_core.messages import (
     HumanMessage,
     AIMessage,
     SystemMessage,
+    ToolMessage,
 )
 
 from agent.llm import get_llm
@@ -100,7 +101,6 @@ def should_continue(
         return "tools"
 
     return "research"
-from langchain_core.messages import ToolMessage, HumanMessage
 
 
 # -------------------------------

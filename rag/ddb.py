@@ -9,10 +9,8 @@ from langchain_huggingface import HuggingFaceEmbeddings
 conn = duckdb.connect("research.db")
 
 
-conn.execute("""
-INSTALL vss;
-LOAD vss;
-""")
+conn.execute("INSTALL vss;")
+conn.execute("LOAD vss;")
 
 
 conn.execute("""

@@ -1,6 +1,6 @@
-from rag.vectorDatabase import query_vector_database
+from rag.ddb import query_vector_database
 
-def retrieve(query: str , top_k : int = 5):
+def retrieve_relevant_chunks(query: str, top_k: int = 5) -> list:
     results = query_vector_database(query)
     context = []
 
