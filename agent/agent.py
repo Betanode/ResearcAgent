@@ -134,7 +134,7 @@ def research_node(state: AgentState):
     response = research_llm.invoke(
         [
             prompt,
-            HumanMessage(content=question)
+            *messages
         ]
     )
 
