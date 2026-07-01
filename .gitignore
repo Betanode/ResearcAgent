@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.env
+research.db
+*.pyc
+.vscode/
+.idea/
+
+data/
+parent_dir/
